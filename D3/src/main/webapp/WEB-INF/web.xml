@@ -17,7 +17,13 @@
 	<servlet>
 		<servlet-name>servlet2</servlet-name>
 		<servlet-class>tw.edu.hfu.servlet.Servlet2</servlet-class>
-		<load-on-startup>10</load-on-startup>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>servlet3</servlet-name>
+		<servlet-class>tw.edu.hfu.servlet.Servlet3</servlet-class>
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 
 
@@ -29,6 +35,11 @@
 	<servlet-mapping>
 		<servlet-name>servlet2</servlet-name>
 		<url-pattern>/s2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>servlet3</servlet-name>
+		<url-pattern>/s3</url-pattern>
 	</servlet-mapping>
 
 
