@@ -1,0 +1,7 @@
+MEDIA=\#a6a6ff | null | false | false | false | false
+PROPERTY_NAME=\#ff4fff | null | false | false | false | false
+PROPERTY_VALUE=\#a6a6ff | null | false | true | false | false
+URI=\#a6a6ff | null | false | true | false | false
+css_content_assist_default_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
+css_content_assist_own_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000
+eclipse.preferences.version=1

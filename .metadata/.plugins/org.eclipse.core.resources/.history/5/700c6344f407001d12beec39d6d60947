@@ -1,0 +1,46 @@
+package tw.edu.hfu.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class Servlet1 extends GenericServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8778L;
+	public Servlet1() {
+		System.out.println("s1");
+	}
+	
+	ServletConfig config;
+	
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		this.config=config;
+		super.init(config);
+	}
+
+
+
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		System.out.println("s1");
+		req.setAttribute("MSG", "req");
+		config.getServletContext().setAttribute("MSG2", "configcontext");
+		getServletContext().setAttribute("MSG3", "context");
+		System.out.println(req.getAttribute("MSG"));
+		System.out.println(config.getServletContext().getAttribute("MSG3"));
+		System.out.println(getServletContext().getAttribute("MSG2"));
+		System.out.println(req.getServletContext().getContextPath());
+		
+	}
+
+}
